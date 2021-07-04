@@ -1,0 +1,123 @@
+
+/* UX Skills CCS */
+
+h1{
+    text-align: center;
+    padding: 25px;
+    
+}
+
+
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: space-evenly;
+    padding: 35px;px;
+    background-image: linear-gradient(white, lightgray, white);
+
+
+}
+
+.skillsdiv{
+    width: 33%;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: darkred;
+    
+}
+
+
+/* my work section */
+
+.workGrid{
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "tLeft     tRight"
+    "mLeft     mRight"
+    "bLeft     bRight"
+    ;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tLeft {
+     
+    justify-content: center;
+    grid-area: tLeft;
+}
+
+.tRight{
+    grid-area: tRight;
+    justify-content: center;
+    align-items: center;
+}
+.mLeft{
+    grid-area: mLeft;
+}
+.mRight{
+    grid-area: mRight;
+}
+.bLeft{
+    grid-area: bLeft;
+}
+.bRight{
+    grid-area: bRight;
+}
+button:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #e85c3c;
+
+}
+
+h3{ 
+
+    text-align: center;
+    color: #e85c3c;
+}
+
+
+@media only screen and (max-width: 600px){
+
+   .flexContainer { 
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: center;
+       max-width: 85
+       %;
+       padding: 0px;
+       margin: 0px;
+    }
+    .skillsdiv {
+        flex-direction: column;
+        width: 100%;
+        }
+    .workGrid {
+        height: 1000px;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "tLeft"     
+        "tRight"
+        "mLeft"    
+        "mRight"
+        "bLeft"     
+        "bRight"
+        ;
+        justify-content: center;
+        align-items: center;
+         
+    }
+}
